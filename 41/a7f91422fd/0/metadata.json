@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.4.5",
+  "checkpoint_id": "41a7f91422fd",
+  "session_id": "49bd7984-1a22-48cf-ac49-89e1aef3e5c3",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-18T14:50:50.503991Z",
+  "branch": "partio-web-release",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "0eec6a45b2e2",
+  "token_usage": {
+    "input_tokens": 6,
+    "cache_creation_tokens": 13324,
+    "cache_read_tokens": 98462,
+    "output_tokens": 41,
+    "api_call_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-18T14:50:50.468031Z",
+    "agent_lines": 6,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 6,
+    "agent_percentage": 100
+  },
+  "transcript_path": ".claude/projects/-Users-arvos-Tactic-workspaces-workspace-partio-web-release-site/49bd7984-1a22-48cf-ac49-89e1aef3e5c3.jsonl"
+}
