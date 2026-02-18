@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# partio marketing website
 
-## Getting Started
+Marketing site for [partio](https://github.com/ArvosAI/partio) — an open-source CLI that captures AI agent sessions alongside Git commits, so you always know _why_ every line was written.
 
-First, run the development server:
+## Tech stack
+
+- [Next.js 16](https://nextjs.org/) (App Router)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## Prerequisites
+
+- Node.js 18+
+- npm
+
+## Getting started
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+site/
+├── public/                  # Static assets (logo SVG)
+├── src/
+│   ├── app/                 # Next.js App Router (layout + single page)
+│   │   ├── favicon.ico
+│   │   ├── globals.css      # Tailwind imports & CSS custom properties
+│   │   ├── layout.tsx       # Root layout (fonts, metadata)
+│   │   └── page.tsx         # Home page
+│   ├── components/
+│   │   ├── layout/          # Navbar, Footer
+│   │   ├── sections/        # Hero, Features, HowItWorks, CliDemo, OpenSource
+│   │   └── ui/              # Button, Badge, Terminal, FeatureCard
+│   └── lib/
+│       └── utils.ts         # Utilities (cn class-merge helper)
+├── eslint.config.mjs
+├── next.config.ts
+├── postcss.config.mjs
+├── tsconfig.json
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Script          | Description                  |
+| --------------- | ---------------------------- |
+| `npm run dev`   | Start dev server             |
+| `npm run build` | Production build             |
+| `npm start`     | Serve production build       |
+| `npm run lint`  | Run ESLint                   |
 
-## Deploy on Vercel
+## Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site uses Tailwind CSS v4 with a dark-only theme defined via CSS custom properties in `src/app/globals.css`. Key color tokens:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `--background`, `--foreground` — base colors
+- `--accent`, `--accent-light`, `--accent-dark` — indigo brand accent
+- `--surface`, `--surface-light` — card/section backgrounds
+- `--border`, `--muted` — borders and secondary text
+- `--success`, `--warning` — status colors
+
+Fonts are Inter (sans) and JetBrains Mono (mono), loaded via `next/font/google`.
+
+## Related projects
+
+- [partio CLI](https://github.com/ArvosAI/partio) — the core CLI tool
+- [partio docs](https://docs.partio.io) — documentation site
+
+## License
+
+MIT
