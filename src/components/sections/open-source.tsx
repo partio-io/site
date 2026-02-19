@@ -36,12 +36,17 @@ export function OpenSource() {
             <div className="mx-auto mt-8 max-w-md space-y-3">
               <div className="rounded-lg border border-border bg-[#0d0d0f] px-4 py-3 font-mono text-sm text-zinc-300">
                 <span className="text-accent-light">$</span> brew install
-                ArvosAI/tap/partio
+                partio-io/tap/partio
+              </div>
+              <div className="text-xs text-zinc-500">or</div>
+              <div className="rounded-lg border border-border bg-[#0d0d0f] px-4 py-3 font-mono text-sm text-zinc-300">
+                <span className="text-accent-light">$</span> curl -fsSL
+                https://partio.io/install.sh | sh
               </div>
               <div className="text-xs text-zinc-500">or</div>
               <div className="rounded-lg border border-border bg-[#0d0d0f] px-4 py-3 font-mono text-sm text-zinc-300">
                 <span className="text-accent-light">$</span> go install
-                github.com/ArvosAI/partio@latest
+                github.com/partio-io/cli/cmd/partio@latest
               </div>
             </div>
 
@@ -50,7 +55,7 @@ export function OpenSource() {
                 Read the Docs
               </Button>
               <Button
-                href="https://github.com/ArvosAI/partio"
+                href="https://github.com/partio-io/cli"
                 variant="secondary"
                 size="lg"
               >

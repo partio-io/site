@@ -11,7 +11,7 @@ const navLinks = [
   { label: "How it Works", href: "#how-it-works" },
   { label: "CLI", href: "#cli-demo" },
   { label: "Docs", href: "https://docs.partio.io" },
-  { label: "GitHub", href: "https://github.com/ArvosAI/partio" },
+  { label: "GitHub", href: "https://github.com/partio-io/cli" },
 ];
 
 export function Navbar() {
