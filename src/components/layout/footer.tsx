@@ -20,11 +20,11 @@ const columns = [
   {
     title: "Community",
     links: [
-      { label: "GitHub", href: "https://github.com/ArvosAI/partio" },
-      { label: "Issues", href: "https://github.com/ArvosAI/partio/issues" },
+      { label: "GitHub", href: "https://github.com/partio-io/cli" },
+      { label: "Issues", href: "https://github.com/partio-io/cli/issues" },
       {
         label: "Discussions",
-        href: "https://github.com/ArvosAI/partio/discussions",
+        href: "https://github.com/partio-io/cli/discussions",
       },
     ],
   },
@@ -77,16 +77,16 @@ export function Footer() {
           <p className="text-xs text-zinc-500">
             MIT License. Built by{" "}
             <a
-              href="https://github.com/ArvosAI"
+              href="https://github.com/partio-io"
               className="text-muted hover:text-foreground"
             >
-              ArvosAI
+              partio-io
             </a>
           </p>
           <p className="text-xs text-zinc-500">
             Open source on{" "}
             <a
-              href="https://github.com/ArvosAI/partio"
+              href="https://github.com/partio-io/cli"
               className="text-muted hover:text-foreground"
             >
               GitHub

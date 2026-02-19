@@ -43,4 +43,4 @@ npm run lint   # Run ESLint
 ## External links
 
 - Docs: https://docs.partio.io
-- CLI repo: https://github.com/ArvosAI/partio
+- CLI repo: https://github.com/partio-io/cli

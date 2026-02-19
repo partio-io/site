@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Terminal } from "@/components/ui/terminal";
@@ -50,6 +51,17 @@ export function Hero() {
           className="flex flex-col items-center text-center"
         >
           <motion.div variants={item}>
+            <Image
+              src="/squirrel-mascot.png"
+              alt="partio mascot"
+              width={180}
+              height={180}
+              className="drop-shadow-lg"
+              priority
+            />
+          </motion.div>
+
+          <motion.div variants={item}>
             <Badge>Open Source</Badge>
           </motion.div>
 
@@ -81,7 +93,7 @@ export function Hero() {
               Get Started
             </Button>
             <Button
-              href="https://github.com/ArvosAI/partio"
+              href="https://github.com/partio-io/cli"
               variant="secondary"
               size="lg"
             >

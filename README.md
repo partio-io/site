@@ -1,6 +1,6 @@
 # partio marketing website
 
-Marketing site for [partio](https://github.com/ArvosAI/partio) — an open-source CLI that captures AI agent sessions alongside Git commits, so you always know _why_ every line was written.
+Marketing site for [partio](https://github.com/partio-io/cli) — an open-source CLI that captures AI agent sessions alongside Git commits, so you always know _why_ every line was written.
 
 ## Tech stack
 
@@ -81,7 +81,7 @@ Fonts are Inter (sans) and JetBrains Mono (mono), loaded via `next/font/google`.
 
 ## Related projects
 
-- [partio CLI](https://github.com/ArvosAI/partio) — the core CLI tool
+- [partio CLI](https://github.com/partio-io/cli) — the core CLI tool
 - [partio docs](https://docs.partio.io) — documentation site
 
 ## License
