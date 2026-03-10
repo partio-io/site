@@ -15,6 +15,7 @@ const columns = [
       { label: "Documentation", href: "https://docs.partio.io" },
       { label: "Quick Start", href: "https://docs.partio.io/quickstart" },
       { label: "CLI Commands", href: "https://docs.partio.io/cli/commands" },
+      { label: "Privacy Policy", href: "/privacy" },
     ],
   },
   {
