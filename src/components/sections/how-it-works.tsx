@@ -19,10 +19,10 @@ const steps = [
   },
   {
     number: "03",
-    title: "Explore",
+    title: "Resume",
     description:
-      "Browse checkpoints to understand past decisions. Rewind to any point to see the full AI conversation that produced the code.",
-    code: "$ partio rewind --list\n  a3f8c2d14e9b  agent=87%\n  bb12340092ac  agent=100%",
+      "Pick up any previous session with full context. partio composes the original prompt, plan, and changes into a ready-to-use summary.",
+    code: "$ partio resume a3f8c2d --print\n  Original Request: Add auth...\n  Plan: 3 steps\n  Changes: 2 files modified",
   },
 ];
 
